@@ -11,7 +11,25 @@ public class Solution{
 }
 
 class Problem {
-	public static void main(String a[]){
+	// public and static can be used interchangably.
+	static public void main(String a[]){
 		System.out.println("Hello World");
 	}
 }
+
+class Solution1 {
+	// Compiled succesfully
+	// Runtime error while executing the .class file
+	// error: main not found. 
+}
+
+class Solution2 {
+	// Compiled successfully, 
+	// Runtime error: main not found.
+	static void main(String args[]) {
+		System.out.println("Hello World!");
+	}
+}
+
+// For multiple classes in one .java file, multiple .class executables are 
+// created, one for each declared class. 
