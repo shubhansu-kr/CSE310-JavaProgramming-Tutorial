@@ -24,9 +24,35 @@ class Solution1 {
 }
 
 class Solution2 {
+	// main is not public 
 	// Compiled successfully, 
 	// Runtime error: main not found.
 	static void main(String args[]) {
 		System.out.println("Hello World!");
+	}
+}
+
+class Solution3 {
+	// Dont specify return type
+	// Compile time error : Invalid method declaration
+	// return type required
+	static public main(String a[]){
+		System.out.println("Hello");
+	}
+}
+
+class Solution4 {
+	// Empty main function 
+	// No error : Successfully compiled and executed.
+	public static void main(String a[]){
+		// Leave it empty 
+	}
+}
+
+class Solution5 {
+	// integer parameters 
+	// Runtime error : Please use string args in main fxn. 
+	public static void main(int a[]){
+		System.out.println("Hello");
 	}
 }

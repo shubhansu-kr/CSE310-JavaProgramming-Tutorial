@@ -33,3 +33,28 @@ class Solution2 {
 
 // For multiple classes in one .java file, multiple .class executables are 
 // created, one for each declared class. 
+
+class Solution3 {
+	// Dont specify return type
+	// Compile time error : Invalid method declaration
+	// return type required
+	static public main(String a[]){
+		System.out.println("Hello");
+	}
+}
+
+class Solution4 {
+	// Empty main function 
+	// No error : Successfully compiled and executed.
+	public static void main(String a[]){
+		// Leave it empty 
+	}
+}
+
+class Solution5 {
+	// integer parameters 
+	// Runtime error : Please use string args in main fxn. 
+	public static void main(int a[]){
+		System.out.println("Hello");
+	}
+}
