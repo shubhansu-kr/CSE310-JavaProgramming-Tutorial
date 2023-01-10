@@ -1,25 +1,14 @@
-class Solution {
-	// If we run the file using the command 
-	// >> java filename.java args...
+class Examination {
+    // With Object  || Without static method
+    public static void main (String ...args) {
+        System.out.println("Results: ");
 
-	// No bytecode is created in this case. Only the first 
-	// class executed. 
+        // Create Object 
+        Examination E1 = new Examination();
+        E1.cgpaOfStudent(args[0]);
+    }
 
-	// The first main from top is executed. 
-	public static void main (String... args) {
-		System.out.println("Main: Solution");
-		System.out.println(args[0]);
-		System.out.println(args[1]);
-	}
+    void cgpaOfStudent(String cg) {
+        System.out.println("Your CGPA is " + cg);
+    }
 }
-
-class Solution1 {
-	// Not executed if 
-	public static void main (String... args) {
-		System.out.println("Main: Solution1");
-		System.out.println(args[0]);
-		System.out.println(args[1]);
-	}
-}
-
-
