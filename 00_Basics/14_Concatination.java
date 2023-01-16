@@ -19,6 +19,9 @@ class Solution {
         // 'A' + 'A' + " year" = 130 + 130 + " year" = 130 + "year" = "130 year"
         System.out.println('A' + 'A' + " year"); // output: 130 year
     
-        System.out.println(10 + false + " year");
+        // Error: We cannot add int and boolean.
+        // System.out.println(10 + false + " year");
+        
+        System.out.println(10 + 10.1 + " year");
     }
 }
