@@ -4,16 +4,19 @@ class Solution {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
-        int b = 10, res = b >> 2, rss = b >>> 2;
-        System.out.println(b + " " + res + " " + rss);
+        byte b = 30;
+        System.out.println(~b); // -31
 
-        b =20;
-        b = b >> 3;
+        b = -53;
+        System.out.println(~b); // 52
 
-        System.out.println(b);
+        b = -64;
+        System.out.println(~b); // 63
+        
 
-        b = 20;
-        b = 3 << b;
-        System.out.println(b);
+        System.out.println(34 >> 3); // 4
+        System.out.println(-34 >> 3); // -5
+        
+        System.out.println(-34 >>> 3); // 536870907
     }
 }
