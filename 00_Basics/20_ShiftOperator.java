@@ -26,7 +26,16 @@ class Solution {
 
         int gg = -60;
         c = gg >>> 2;
+        System.out.println(c);
 
+        int x = -1;
+        c = x >>> 32;
+        System.out.println(c);
+
+        c = x >>> 33;
+        System.out.println(c);
+
+        c = x >>> 34;
         System.out.println(c);
     }
 }
