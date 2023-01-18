@@ -23,6 +23,6 @@ class Solution {
             else a = c;
         }
 
-        System.out.println(a + " " + b + " " + c + " " + i + " " + j + " " + k);
+        System.out.println(a + " " + b + " " + c + " " + d + " " + i + " " + j + " " + k);
     }
 }
