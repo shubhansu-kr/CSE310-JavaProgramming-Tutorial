@@ -26,8 +26,6 @@ class Solution {
                 if (i == 7) break outer;
                 System.out.print(i + j + " ");
             }
-            // inner:
-            // We need to place this statement after label;
             System.out.println();
         }
 
@@ -59,8 +57,6 @@ class Solution1 {
                 if (i == 7) continue outer;
                 System.out.print( "("+ i + ", " + j + ")" + " ");
             }
-            // inner:
-            // We need to place this statement after label;
             System.out.println();
         }
 
