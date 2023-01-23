@@ -37,3 +37,54 @@ class Solution1 {
         }
     }
 }
+
+class Solution2{
+    static public void main(String args[]){
+        
+        int A[] = {2, 4, 3, 2, 4, 2};
+        
+        // For each loop 
+        // Syntax: for(int var: iterable){}
+        for(int i: A){
+            System.out.println(i);
+        }
+    }
+}
+
+class Solution3 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        int num[] = {1,2,3,4,5};
+        int sum = 0;
+
+        for(int i: num){
+            System.out.print(i + " ");
+            sum += i;
+        }
+        System.out.print("\n"+ sum);
+    }
+}
+
+class Solution4 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        int num[] = {1,2,3,4,5};
+        int sum = 0;
+
+        for(int i: num){
+            System.out.print(i + " ");
+            sum += i;
+            i++; // not updated in the array. i is a copy of original element.
+        }
+        System.out.print("\n"+ sum + "\n");
+
+        for(int i: num){
+            // Values are not updated in the array. 
+            System.out.print(i + " ");
+            // sum += i;
+            // i++;
+        }
+    }
+}
