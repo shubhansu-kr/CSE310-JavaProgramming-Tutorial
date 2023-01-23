@@ -4,6 +4,26 @@ class Solution {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
+        int i;
+        for(i = 0; i < 5; i++);
+        System.out.println(i++);
+    }
+}
+
+class Solution1 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        // Error: Compile time 
+        for(int i = 0; i < 5; i++);
+            System.out.println(i++);
+    }
+}
+
+class Solution2 {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
         int a, b;
         b = 5;
         for(a = 0; a < b; a++) {
