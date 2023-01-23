@@ -1,34 +1,33 @@
 import java.util.*;
 
 class Solution {
+    // Two Dimensional Array
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
-        int sum = 0;
+        // Only valid declaration 
+        int [][] arr;
+        int arr1 [][];
+        int [][]arr2;
+        int arr3[][];
 
-        // Dynammic allocation of matrix.
-        int nums[][] = new int[3][5];
-        int nums1[][] = new int[5][5];
+        // Error: Illegal initialisation of array. 
+        // arr = {{1, 2}, {3, 4}};
+
+        // We can initialise array with values only during the declaration.
+        int arr4[][] = {{1, 2}, {3, 4}};
         
-        // initialise value in matrix
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 5; ++j){
-                nums[i][j] = i+j;
-            }
-        }
+        // Allowed to dma after declaration.
+        arr = new int[2][2];
 
-        // Initialise the values in matrix
-        for(int i = 0; i < 5; i++){
-            for(int j = 0; j < 5; ++j){
-                nums1[i][j] = i*i+j*j;
-            }
-        }
+        // Again error: Cannot initialise 
+        // arr = {{1, 2}, {3, 4}};
 
-        for(int it[]: nums){
-            for(int i: it){
-                System.out.print(i);
+        for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < 2; ++j){
+                arr[i][j] = i+j;
             }
-            System.out.println();
         }
     }
+
 }
