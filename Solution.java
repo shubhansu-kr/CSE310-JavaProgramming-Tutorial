@@ -4,14 +4,24 @@ class Solution {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
-        int a, b;
-        b = 5;
-        for(a = 0; a < b; a++) {
-            System.out.println("a = " + a + " | b = " + b);
-            // System.out.println("b = " + b);
-            b--;
+        // For Loop 
+        for(int i = 0; i < 10; ++i) {
+            System.out.print(i);
         }
-        System.out.println("Out of loop");
-        System.out.println("a = " + a + " | b = " + b);
+        System.out.println("");
+
+        // while loop
+        int i = 0;
+        while(i < 10){
+            System.out.print(i++);
+        }
+        System.out.println("");
+
+        // do-while Loop
+        i = 0;
+        do {
+            System.out.print(i++);
+        } while (i < 10);
+        System.out.println("");
     }
 }
