@@ -10,8 +10,8 @@ class Solution {
 
 
         // Rules for labels: 
-        // We cannot use labels after the break label statement. 
-        // We need atleast one statement after label;
+        // We can only give labels to loops and break out of it.
+
         outer: 
         for(int i = 0; i < 10; i++) {
             inner:
@@ -30,7 +30,7 @@ class Solution {
             // We need to place this statement after label;
             System.out.println();
         }
-        // outer:
+
         System.out.println("We are out of outer loop");
     }
 }
