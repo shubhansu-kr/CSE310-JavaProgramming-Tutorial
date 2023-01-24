@@ -1,21 +1,44 @@
 import java.util.*;
 
 class Solution {
+    static int x = 21;
 
-    static int x;
-
-    // constructor is executed only when an object is created.
-    Solution(){
-        System.out.println("Constructor");
+    // Multiple static blocks : Allowed
+    static {
+        System.out.println("Static0");
     }
 
-    // static is executed automatically.
-    static{
-        System.out.println(x);
+    static {
+        System.out.println("Static1");
+    }
+
+    static {
+        System.out.println("Static2");
+    }
+
+    {
+        System.out.println("Init0");
+        x++;
+    }
+
+    {
+        System.out.println("Init0");
+        x++;
+    }
+
+    {
+        System.out.println("Init0");
+        x++;
+    }
+
+    Solution(){
+        System.out.println("Constructor");
+        System.out.println(x); // prints 24;
     }
 
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        // Solution obj1 = new Solution();
+        
+        Solution obj1 = new Solution();
     }
 }
