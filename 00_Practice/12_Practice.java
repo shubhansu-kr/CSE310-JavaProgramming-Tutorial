@@ -1,3 +1,8 @@
+// WAP to create Banking Management System. 
+// deposit();
+// withdraw();
+// Checkbalance();
+
 import java.util.*;
 
 class Solution {
