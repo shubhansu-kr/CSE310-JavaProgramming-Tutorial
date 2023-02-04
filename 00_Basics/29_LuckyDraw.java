@@ -23,7 +23,7 @@ class Solution {
 
         while(game){
             
-            winner = ((int)(Math.random()))%20 + 1;
+            winner = ((int)(Math.random()+1))%20 + 1;
             System.out.println("-- Lucky Draw --\n");
             System.out.println("Choose Option:");
             System.out.println("1: Draw");
