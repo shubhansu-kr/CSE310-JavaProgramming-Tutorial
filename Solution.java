@@ -38,6 +38,10 @@ class Solution {
             }
         }
 
+        if (max2 == -1) {
+            System.out.println("No third highest");
+            return;
+        }
         System.out.println("The third Highest marks is: " + max2);
     }
 }

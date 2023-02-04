@@ -25,19 +25,23 @@ class Solution {
         int max = -1, max1 = -1, max2 = -1;
         for(int it: marks) {
             if (it >= max){
-                max = it;
-                max1 = max;
                 max2 = max1;
+                max1 = max;
+                max = it;
             }
             else if (it >= max1){
-                max1 = it;
                 max2 = max1;
+                max1 = it;
             }
             else if (it >= max2) {
                 max2 = it;
             }
         }
 
+        if (max2 == -1) {
+            System.out.println("No third highest");
+            return;
+        }
         System.out.println("The third Highest marks is: " + max2);
     }
 }
