@@ -1,25 +1,15 @@
+// Java Snippet Fixed
+
+import java.util.*;
+
 class Solution {
-	public static void main (String args[]){
+    static Scanner sc = new Scanner(System.in);
 
-        int size = args.length;
+    public static void main(String args[]){
+        // Your code goes here 
+    }
 
-        for(int i = 0; i < size; ++i) {
-            System.out.println(args[i]);
-        }
-
-        // For String. 
-        System.out.println(args[0].getClass().getSimpleName());
-
-        int intData = 21, x =15;
-        // Error. 
-        // System.out.println(x.getClass().getSimpleName());
-
-        System.out.println((((Object)x).getClass().getSimpleName()));
-
-        System.out.println(intData + " is of type " + ((Object)intData).getClass().getSimpleName());
-
-        
-	}
+    protected void finalize() {
+        sc.close();
+    }
 }
-
-// The CLI arguments passed are recieved in form of string.
