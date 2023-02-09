@@ -1,16 +1,24 @@
 class Solution {
 	public static void main (String args[]){
-		System.out.println(args[0]);
-		System.out.println(args[1]);
+
+        int size = args.length;
+
+        for(int i = 0; i < size; ++i) {
+            System.out.println(args[i]);
+        }
 
         // For String. 
         System.out.println(args[0].getClass().getSimpleName());
 
-        int x = 21;
+        int intData = 21, x =15;
         // Error. 
         // System.out.println(x.getClass().getSimpleName());
 
-        System.out.println(((Object)x.getClass().getSimpleName()));
+        System.out.println((((Object)x).getClass().getSimpleName()));
+
+        System.out.println(intData + " is of type " + ((Object)intData).getClass().getSimpleName());
+
+        
 	}
 }
 
