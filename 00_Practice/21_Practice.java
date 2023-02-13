@@ -1,4 +1,4 @@
-// Practice: WAP 
+// Practice: WAP to chain constructor
 
 import java.util.*;
 
@@ -18,12 +18,10 @@ class Solution {
     
     Solution(int roll){
         this(roll, "name");
-        // this.roll = roll;
     }
     
     Solution(String name) {
         this(21, name);
-        // this.name = name;
     }
     
     Solution(int roll, String name) {
