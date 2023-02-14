@@ -1,17 +1,27 @@
-// Practice
+// Singleton Class
 
 import java.util.*;
+
+class MySingleton {
+    int a = 21;
+
+    private static MySingleton ob;
+    private MySingleton(){}
+
+    public static MySingleton getInstance(){
+        if (ob == null) {
+            ob = new MySingleton();
+        }
+        return ob;
+    }
+}
+
 
 class Solution {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String args[]){
-        int data[] = {12, 11, 012};
-        for(int it: data){
-            System.out.print(it + " ");
-        }
-
-        // 012 : Prints 10 which is octal value of 012
-        // 0 before a number represents octal format.
+        MySingleton ob = MySingleton.getInstance();
+        System.out.println(ob.a);
     }
 }

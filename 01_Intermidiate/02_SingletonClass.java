@@ -3,6 +3,8 @@
 import java.util.*;
 
 class MySingleton {
+    int a = 21;
+
     private static MySingleton ob;
     private MySingleton(){}
 
@@ -19,6 +21,7 @@ class Solution {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String args[]){
-        
+        MySingleton ob = MySingleton.getInstance();
+        System.out.println(ob.a);
     }
 }
