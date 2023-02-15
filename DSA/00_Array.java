@@ -12,7 +12,11 @@ class Solution {
 
         // Only valid way to declare as well as initialise the array.
         int arr[] = {1, 3, 4, 2, 4};
+        
+        arr1 = arr2 = arr3 = arr4 = arr;
 
         System.out.println(arr.length + " " + arr1.length + " " + arr2.length + " " + arr3.length + " " + arr4.length);
+    
+        sc.close();
     }
 }

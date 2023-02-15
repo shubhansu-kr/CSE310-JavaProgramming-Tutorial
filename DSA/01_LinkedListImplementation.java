@@ -39,7 +39,7 @@ class Solution {
             else {head = tail = temp;}
             --n;
         }
-
+        sc.close();
         return head;
     }
 
@@ -59,5 +59,6 @@ class Solution {
         ListNode head = createLinkedList();
         traverse(head);
 
+        sc.close();
     }
 }
