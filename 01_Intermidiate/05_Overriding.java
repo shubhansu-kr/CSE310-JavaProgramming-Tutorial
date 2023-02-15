@@ -7,7 +7,8 @@ class Solution {
 
     public static void main(String args[]){
         scientificCalculator Obj = new scientificCalculator();
-        System.out.println(Obj.add(21, 15));
+        Obj.add(21, 15);
+        
     }
 }
 
