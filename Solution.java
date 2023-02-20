@@ -3,6 +3,8 @@
 import java.util.*;
 
 class Car {
+    Car(){}
+
     void drive() {
         System.out.println("Driving a slow car");
     }
@@ -47,5 +49,11 @@ class Solution {
         // Error: Method fly undefined for the object java
         // cg.fly(); // error
         
+
+        // Let's try to add parent's object in childs reference.
+
+        // Error: Type Mismath: No conversion from car to wagonr
+        // WagonR wg = new Car();
+
     }
 }
