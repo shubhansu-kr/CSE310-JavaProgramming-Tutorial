@@ -1,59 +1,40 @@
-// Reference Variable: Method Overriding.
+// String Class In Java
 
 import java.util.*;
-
-class Car {
-    Car(){}
-
-    void drive() {
-        System.out.println("Driving a slow car");
-    }
-}
-
-class WagonR extends Car {
-    // Overriding the inherited function.
-    void drive() {
-        System.out.println("Driving a wagonR");
-    }
-
-    void fly() {
-        System.out.println("We are flying");
-    }
-}
 
 class Solution {
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String args[]) {
+    public static void main(String args[]){
+        String uni = "LPU";
+        uni = "Lovely Professional University";
+        System.out.println(uni);
 
-        // cc is just a reference to the object created by the new Car().
-        Car cc = new Car();
-        cc.drive(); // calls the Car.drive();
+        // Strings are immutable in java 
+        String a = "Lovely";
+        String b = "University";
+        String c = a + "Professional" + b;
 
-        // wg is a reference to the created object of wagonr Class.
-        WagonR wg = new WagonR();
-        wg.drive(); // calls the WagonR.drive();
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
 
-        // cg is a reference to the created object of wagonR class.
-        Car cg = new WagonR();
-        cg.drive();  // calls WagonR.drive();
+        char cArray[] = {'a', 'b', 'c', 'd'};
+        byte bArray[] = {65, 66, 67, 68};
 
-        // We can use a reference of Parent class to refer to the object 
-        // of child class.
-        // but we can only call those  functions which are overridden by the 
-        // child class.
+        // Constructor of string. 
+        String s1 = new String(cArray);
+        String s2 = new String(bArray);
+        // byte is converted to ascii 
 
-        // It would give an error if we try to call any method which is not
-        // overridden 
+        // offset : index || count : length
+        String s3 = new String(cArray, 2, 2);
+        String s4 = new String(cArray, 0, 2);
 
-        // Error: Method fly undefined for the object java
-        // cg.fly(); // error
-        
-
-        // Let's try to add parent's object in childs reference.
-
-        // Error: Type Mismath: No conversion from car to wagonr
-        // WagonR wg = new Car();
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        System.out.println(s4);
 
     }
 }
