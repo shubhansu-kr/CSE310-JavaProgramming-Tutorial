@@ -7,7 +7,7 @@ class Solution {
 
     public static void main(String args[]){
         String s1 = "Lovely Professional University";
-        String s2 = "Lovely " ;
+        String s2 = "Lovely" ;
         String s3 = "University";
 
         String s4 = "Lovely";
@@ -38,10 +38,14 @@ class Solution {
         // greater than 0 if S is greater than s
         // Zero if both strings matches.
 
+        // Returns the difference of first unmatched char. 
+
         System.out.println(s1.compareTo(s2)); // 24
         System.out.println(s1.compareTo(s3)); // -9
         System.out.println(s2.compareTo(s3)); // -9
         System.out.println(s2.compareTo(s4)); // 0
         System.out.println(s4.compareTo(s4)); // 0
+
+        
     }
 }
