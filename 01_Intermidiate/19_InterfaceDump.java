@@ -89,7 +89,7 @@ class avi implements Student {
     }
 }
 
-class inter_face {
+class Solution {
     public static void main(String args[]) {
         avi h = new avi();
         h.data();
