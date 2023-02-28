@@ -59,7 +59,7 @@ interface B extends A {
 }
 
 // the class must implement all method of A and B.
-class gfg implements B {
+class Solution2 implements B {
     public void method1() {
         System.out.println("Method 1");
     }
