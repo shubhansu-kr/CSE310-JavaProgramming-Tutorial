@@ -33,7 +33,9 @@ class Student {
             // If Marks subClass would have been static, we have a different 
             // syntax to create the object.
             // Student.Marks mk = new Student.Marks();
-            
+
+            // We cannot access the non static member of outer class inside the static sub class.
+            // System.out.println(counter);
         }
 
         void callMarks() {
@@ -44,7 +46,51 @@ class Student {
         }
     }
 
+    public class Result {
+        char grade;
+        float CGPA;
+
+        {
+            grade = 'N';
+            CGPA = 0.0f;
+        }
+
+        Result() {}
+        Result(char C, float f) {
+            grade = C;
+            f = CGPA;
+        }
+
+        void setGrade(char c) {
+            grade = c;
+        }
+
+        void setCG(float f) {
+            CGPA = f;
+        }
+
+        void showResult() {
+            System.out.println("Grade : " + grade);
+            System.out.println("CGPA  : " + CGPA);
+        }
+
+        static void callMarksAndCallDetails() {
+            Student st = new Student();
+
+            Student.Marks mk = st.new Marks();
+
+            // Since Details is a static class we need to create the object using 
+            // this syntax only.
+            Student.Details dk = new Student.Details();
+
+            mk.show();
+            dk.show();
+        }
+    }
+
+
     static String name = "Shubh";
+    int counter = 21;
     void display() {
         System.out.println(name + "ansu");
     }
@@ -59,6 +105,12 @@ class Solution {
         st.display();
         Student.Details obj = new Student.Details();
         obj.show();
+
+        // or we can create using a different syntax 
+        Student.Result obj1 = st.new Result();
+        obj1.setCG(5.3f);
+        obj1.setGrade('C');
+        obj1.showResult();
 
         // Private not available. 
         // Student.Marks obj1 = new Student.Marks();
