@@ -21,9 +21,7 @@ class Bank {
         this.name = name;
     }
 
-    // Error: On Static Class.
-
-    static class Loan {
+    class Loan {
 
         Loan() {
             System.out.println("Loan Constructor");
@@ -40,8 +38,7 @@ class Bank {
         }
 
         void display() {
-            // System.out.println("Bank: " + name + " Interest: " + interest);
-            System.out.println("Interest: " + interest);
+            System.out.println("Bank: " + name + " Interest: " + interest);
         }
     }
 }
