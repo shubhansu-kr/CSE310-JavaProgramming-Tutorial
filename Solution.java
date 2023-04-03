@@ -20,9 +20,11 @@ class Solution {
         } catch (InputMismatchException e) {
             System.out.println(e);
             System.out.println("Apple Oranges");
+            System.out.println("Wolf in sheep's clothing");
         } catch (NumberFormatException e) {
             System.out.println(e);
             System.out.println("Apple Oranges");
+            System.out.println("Swords can't be made from rocks.");
         } catch (Exception e) {
             System.out.println(e);
         } catch (Throwable e) {
@@ -32,5 +34,21 @@ class Solution {
         for (int i = lower; i < upper; i++) {
             System.out.println(i);
         }
+
+
+        // String Index out of bound Exception.
+        try {
+            System.out.println("Hello".substring(0, 10));
+        }
+        catch(StringIndexOutOfBoundsException e) {
+            System.out.println("Limits");
+            System.out.println(e);
+        }
+        catch(Exception e) {
+            System.out.println(e);
+            System.out.println("Exception Raised");
+        }
+
+
     }
 }
