@@ -11,6 +11,9 @@ class Solution {
             lower = Integer.parseInt(args[0]);
             upper = Integer.parseInt(args[1]);
 
+            if (lower >= upper) {
+                throw new Exception("Lower >= upper");
+            }
         }
         // Multi catch : Use pipes to catch multiple types of exception.
         catch (IndexOutOfBoundsException | InputMismatchException | NumberFormatException  e) {
@@ -53,7 +56,5 @@ class Solution {
             System.out.println(e);
             System.out.println("Exception Raised");
         }
-
-
     }
 }
