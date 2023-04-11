@@ -29,6 +29,9 @@ class Solution {
             // close the string 
             // os.close();
 
+            // We need to clear the stream once used.
+            os.flush();
+
         }catch(FileNotFoundException e) {
             System.out.println(e);
         }
