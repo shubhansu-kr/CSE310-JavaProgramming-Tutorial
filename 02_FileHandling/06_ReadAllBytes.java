@@ -20,9 +20,7 @@ class Solution {
             byte b[];
 
             b = is.readAllBytes();
-            String s = new String(b);
-            
-            System.out.println(s);
+            System.out.println(b.toString());
             
         } catch (Exception e) {
             System.out.println(e);
