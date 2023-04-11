@@ -1,3 +1,4 @@
-"Amigos" 
-
-lorem ipsum .... 
+Laptop Brand is: Hp
+Model is: pavallion
+Warranty Period is: 2
+HPpavallion2
