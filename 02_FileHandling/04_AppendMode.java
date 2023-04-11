@@ -59,12 +59,14 @@ class Solution {
             // We do not need to concatinate the strings to form stream.
             // os.write(lp.getDetailsString().getBytes());
             
-            // We can use miltiple writes method.
+            // We can use miltiple writes method. 
+            // Does not add breakline on its own. 
             os.write(lp.brand.getBytes());
             os.write(lp.model.getBytes());
             os.write(lp.warranty.getBytes());
 
-            
+            // Result: HPpavallion2 in dummy.txt
+
             // Type conversion
             // byte b[] = lp.model.getBytes();
             // String res = b.toString();
