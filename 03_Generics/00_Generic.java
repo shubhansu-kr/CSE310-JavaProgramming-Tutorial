@@ -11,7 +11,6 @@ class Solution {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String args[]){
-        // Raw declaration
         Registration obj = new Registration();
 
         // We have not specified the type of obj, so it can take any type
