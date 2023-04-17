@@ -11,6 +11,11 @@ class Parent<T1, T2> {
         this.id = id;
     }
 
+    void showTypes(){
+        System.out.println(name.getClass().getName());
+        System.out.println(id.getClass().getName());
+    }
+
     T1 getName() {
         return this.name;
     }
@@ -29,6 +34,8 @@ class Solution {
 
         // Set values of obj.
         obj.set("Shubh", 21);
+
+        obj.showTypes();
 
         System.out.println(obj.getName());
         System.out.println(obj.getId());

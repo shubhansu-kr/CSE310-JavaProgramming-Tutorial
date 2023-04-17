@@ -1,27 +1,43 @@
-// Generic in Java
+// Multiple generic 
 
 import java.util.*;
 
-// Create a generic template t
-class Registration<T> {
-    T id;
+class Parent<T1, T2> {
+    T1 name;
+    T2 id;
+
+    void set(T1 name, T2 id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    void showTypes(){
+        System.out.println(name.getClass().getName());
+        System.out.println(id.getClass().getName());
+    }
+
+    T1 getName() {
+        return this.name;
+    }
+
+    T2 getId() {
+        return this.id;
+    }
 }
 
 class Solution {
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String args[]){
-        // Raw declaration
-        Registration obj = new Registration();
+    public static void main(String args[]) {
+        // Parameterised Initialisation of Obj.
+        Parent<String, Integer> obj = new Parent<String, Integer>();
 
-        // We have not specified the type of obj, so it can take any type
-        // T is of object type(Parent of all data types).
+        // Set values of obj.
+        obj.set("Shubh", 21);
 
-        obj.id = 231321;
-        System.out.println(obj.id);
+        obj.showTypes();
 
-        obj.id = "Lost";
-        System.out.println(obj.id);
-
+        System.out.println(obj.getName());
+        System.out.println(obj.getId());
     }
 }
