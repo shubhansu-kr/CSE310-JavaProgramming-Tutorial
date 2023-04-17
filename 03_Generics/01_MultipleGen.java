@@ -11,10 +11,11 @@ class Parent<T1, T2> {
         this.id = id;
     }
 
-    T1 getFirst() {
+    T1 getName() {
         return this.name;
     }
-    T2 getSecond() {
+
+    T2 getId() {
         return this.id;
     }
 }
@@ -22,11 +23,14 @@ class Parent<T1, T2> {
 class Solution {
     static Scanner sc = new Scanner(System.in);
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
+        // Parameterised Initialisation of Obj.
         Parent<String, Integer> obj = new Parent<String, Integer>();
+
+        // Set values of obj.
         obj.set("Shubh", 21);
-        
-        System.out.println(obj.getFirst());
-        System.out.println(obj.getSecond());
+
+        System.out.println(obj.getName());
+        System.out.println(obj.getId());
     }
 }
