@@ -19,6 +19,9 @@ class Solution {
         obj.id = 231321;
         System.out.println(obj.id);
 
+        // When we change the data type of variables, object is reallocated 
+        // memory, based on requirement.
+        
         obj.id = "Lost";
         System.out.println(obj.id);
 
