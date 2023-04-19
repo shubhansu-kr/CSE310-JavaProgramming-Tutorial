@@ -1,5 +1,5 @@
 // Use ListIterator Method to replace every occurence of 0 with 1
-// Also add a 20 before every 10;
+// Also add a 20 before every 10 group;
 
 import java.util.*;
 
@@ -23,7 +23,7 @@ class Solution {
             if (x == 10) {
                 it.previous();
                 it.add(20);
-                it.next();
+                while(it.hasNext() && it.next() == 10);
             }
             else if (x == 0) {
                 it.set(1);

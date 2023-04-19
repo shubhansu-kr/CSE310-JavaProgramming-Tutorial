@@ -23,7 +23,7 @@ class Solution {
             if (x == 10) {
                 it.previous();
                 it.add(20);
-                it.next();
+                while(it.hasNext() && it.next() == 10);
             }
             else if (x == 0) {
                 it.set(1);
