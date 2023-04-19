@@ -24,9 +24,7 @@ class Solution {
                 it.previous();
                 it.add(20);
                 while(it.hasNext() && it.next() == 10);
-                it.previous();
                 it.add(20);
-                it.next();
             }
             else if (x == 0) {
                 it.set(1);
