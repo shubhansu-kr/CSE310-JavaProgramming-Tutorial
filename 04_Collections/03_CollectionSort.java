@@ -32,10 +32,7 @@ class Solution {
         std.add(new Student(3, "Mukher"));
         std.add(new Student(4, "Lakh"));
 
-        // System.out.println(std);
-        for (Student itrStudent : std) {
-            System.out.println((itrStudent.name));
-        }
+        System.out.println(std);
 
         // std.sort(); : Need to pass the comparator
         // Collections.sort(std); : Error: Need to overwrite compareTo method
@@ -45,18 +42,11 @@ class Solution {
             if (obj1.name.charAt(0) > obj2.name.charAt(0)) {
                 return 1;
             }
-            else if (obj1.name.charAt(0) < obj2.name.charAt(0)) {
-                return -1;
-            }
             return 0;
         };
 
         Collections.sort(std, compareTo);
 
-        for (Student itrStudent : std) {
-            System.out.println((itrStudent.name));
-        }
-
-        // System.out.println(std);
+        System.out.println(std);
     }
 }
